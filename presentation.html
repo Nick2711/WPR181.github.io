@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .interactive-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .interactive-button:hover {
+    background-color: #2980b9;
+  }
+
+  .interactive-button:active {
+    transform: scale(0.75);
+  }
+</style>
+</head>
+<body>
+
+<button class="interactive-button" id="myButton">Click Me!</button>
+
+<script>
+  // JavaScript
+  const button = document.getElementById("myButton");
+
+  button.addEventListener("click", function() {
+    alert("Button Clicked!");
+  });
+</script>
+
+</body>
+</html>
